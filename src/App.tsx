@@ -63,7 +63,7 @@ function App() {
               )
               .filter(
                 (protocol: any) =>
-                  !['Chain', 'Bridge'].includes(protocol.category)
+                  !['Chain', 'Bridge', 'CEX'].includes(protocol.category)
               )
               .map((protocol: any) => ({
                 ...protocol,
